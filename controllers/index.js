@@ -8,7 +8,7 @@ class Index{
 	}
 
 	index (req, res){
-		res.render('index/index', { title: 'Express', params: req });
+		res.render('default/web/index', { title: 'Express', params: req });
 	}
 }
 module.exports = new Index();
