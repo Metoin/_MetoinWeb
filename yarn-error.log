@@ -1,5 +1,5 @@
 Arguments: 
-  D:\nodejs\node.exe C:\Users\Metoin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add html-webpack-plugin -dev
+  D:\nodejs\node.exe C:\Users\Metoin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add supervisor --dev
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;%APPCAN_PATH%;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd\;E:\Wnmp\php;C:\ProgramData\ComposerSetup\bin;D:\TortoiseGit\bin;D:\nodejs\;D:\Android\sdk\tools;D:\Android\sdk\platform-tools;C:\Users\Metoin\AppData\Local\Microsoft\WindowsApps;C:\Users\Metoin\AppData\Roaming\Composer\vendor\bin;C:\Users\Metoin\AppData\Roaming\npm
@@ -19,7 +19,8 @@ npm manifest:
     "version": "1.0.0",
     "private": true,
     "scripts": {
-      "start": "node ./bin/www"
+      "start": "node ./bin/www",
+      "dev": "supervisor app.js"
     },
     "description": "metoin前端服务及页面",
     "main": "index.js",
@@ -4996,5 +4997,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
 Trace: 
-  Error: EBUSY: resource busy or locked, rmdir 'E:\Node\_MetoinWeb\node_modules\node-sass'
-      at Error (native)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com:443
+      at Object.exports._errnoException (util.js:1022:11)
+      at errnoException (dns.js:33:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)

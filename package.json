@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "supervisor app.js"
   },
   "description": "metoin前端服务及页面",
   "main": "index.js",
