@@ -1,0 +1,37 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{}
+ul,li,dl,dt,dd{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+// header style
+.metoin_header{}
+.mh_header{}
+.mh_logo{}
+.mh_position{
+	>.mh_menu{}
+	>.mh_user{}
+}
+.mh_user{
+	>.mh_user_list{
+		>a{}
+		>.mh_list_box{}
+	}
+}
+
+// footer style
+.metoin_footer{}
+.mf_footer{
+	>.mf_wrapper{
+		>.mf_link,
+		.mf_copy,
+		.mf_company{
+			>a{}
+		}
+	}
+}
